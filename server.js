@@ -9,9 +9,7 @@ const config = require('./config/keys.env');
 
 
 //db connection
-// const url="mongodb://localhost:27017/edumonk";
-const url = "mongodb+srv://edudev:edudev@cluster0-vljvr.mongodb.net/test?retryWrites=true&&w=majority";
-//const url="mongodb:"+config.Database.Username+":"+config.Database.Password+"@cluster0-vljvr.mongodb.net/test?retryWrites=true&&w=majority"//@ds161485.mlab.com:61485/edumonk";
+const url = "mongodb://localhost:27017/SkillIndia";
 mongoose.Promise = global.Promise;
 mongoose.connect(url,{useNewUrlParser: true},(err,db)=>{
     if(err) throw err;
